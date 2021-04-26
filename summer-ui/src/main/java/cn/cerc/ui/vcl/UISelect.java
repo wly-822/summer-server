@@ -13,6 +13,14 @@ public class UISelect extends UIComponent {
     private Map<String, String> options = new LinkedHashMap<>();
     private String selected;
 
+    public UISelect() {
+        super();
+    }
+
+    public UISelect(UIComponent owner) {
+        super(owner);
+    }
+
     @Override
     public void output(HtmlWriter html) {
         html.print("<select ");
